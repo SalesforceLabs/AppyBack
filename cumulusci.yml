@@ -1,0 +1,19 @@
+minimum_cumulusci_version: '3.12.2'
+project:
+    name: appyback
+    package:
+        name:  appyback
+        api_version: '48.0'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/appyback/tests
+            options:
+                outputdir: robot/appyback/results
+
+    robot_testdoc:
+        options:
+            path: robot/appyback/tests
+            output: robot/appyback/doc/appyback_tests.html
