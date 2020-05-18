@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Employee_Request_PreApproved</fullName>
+        <description>Employee Request PreApproved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>AppyBack/AB_PreApproved_Request_Mail</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Employee_Request</fullName>
+        <description>New Employee Request</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Employee__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>AppyBack/AB_Approved_Request_Mail</template>
+    </alerts>
+    <alerts>
+        <fullName>Request_Approved</fullName>
+        <description>Request Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>AppyBack/AB_Approved_Request_Mail</template>
+    </alerts>
+    <alerts>
+        <fullName>Request_Denied</fullName>
+        <description>Request Denied</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>AppyBack/AB_Request_Denied</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Final_Approval</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Final Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Final_Rejection</fullName>
+        <field>Status__c</field>
+        <literalValue>Denied</literalValue>
+        <name>Final Rejection</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reject</fullName>
+        <field>Status__c</field>
+        <literalValue>Denied</literalValue>
+        <name>Reject</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Approved</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Status Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Denied</fullName>
+        <field>Status__c</field>
+        <literalValue>Denied</literalValue>
+        <name>Status Denied</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>setApprovalDate</fullName>
+        <field>Approved_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>setApprovalDate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+</Workflow>

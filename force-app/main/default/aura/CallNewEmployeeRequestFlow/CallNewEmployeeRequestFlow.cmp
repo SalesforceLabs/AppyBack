@@ -1,0 +1,17 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,lightning:availableForFlowScreens,lightning:actionOverride" access="global">
+
+<aura:handler name="init" value="{!this}" action="{!c.init}" />
+
+    <article class="slds-card">
+      <div class="slds-card__header slds-grid">
+        <header class="slds-media slds-media--center slds-has-flexi-truncate">
+          <div class="slds-media__body">
+              <div>
+                <lightning:flow aura:id="flowData"  onstatuschange="{!c.handleStatusChange}"/>
+              </div>
+            </div>
+          </header>
+        </div>
+    </article>
+    
+</aura:component>

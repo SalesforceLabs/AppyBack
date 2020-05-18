@@ -1,0 +1,42 @@
+<aura:component >
+    
+    <aura:attribute name="tile" type="object" />
+    
+    <aura:attribute name="sizeLarge" type="Integer" />
+    <aura:attribute name="sizeMedium" type="Integer" />
+    <aura:attribute name="sizeSmall" type="Integer" />
+    
+	<lightning:layoutItem class="slds-item" size="12" smallDeviceSize="{!v.sizeSmall}" mediumDeviceSize="{!v.sizeMedium}" largeDeviceSize="{!v.sizeLarge}">
+        <article aura:id="tile" style="{! v.tile.tileBg + v.tile.tileHeight}" class="tile-style slds-tile slds-tile_board slds-box slds-p-around--small slds-m-around--small">
+            <div class="{! 'slds-tile__title' + v.tile.fields[0].size + v.tile.fields[0].align}" title="{!v.tile.fields[0].value}">
+                <a href="{! '/' + v.tile.id}">{!v.tile.fields[0].value}</a>
+            </div>
+            <div class="slds-tile__detail slds-m-top--small">
+                <div class="slds-grid slds-wrap">
+                    <aura:iteration var="tileBadge" items="{!v.tile.badges}" indexVar="num">
+                        <aura:if isTrue="{! tileBadge.hasValue }">
+                            <span style="{!tileBadge.color + tileBadge.bgColor}" class="slds-badge slds-m-bottom_x-small slds-m-left_none slds-m-right_x-small">
+                                <aura:if isTrue="{!tileBadge.hasLabel}">{!tileBadge.label}:</aura:if>
+                                <strong><aura:unescapedHtml value="{!tileBadge.value}"/></strong>
+                            </span>
+                        </aura:if>
+                    </aura:iteration>
+                </div>
+                <dl class="slds-list_stacked">
+                    <aura:iteration var="tileField" items="{!v.tile.fields}" indexVar="num">
+                        <div class="slds-m-top--small">
+                            <aura:if isTrue="{! and(num > 0, tileField.hasValue )}">
+                                <aura:if isTrue="{! tileField.hasLabel }">
+                                    <dt class="slds-item_label slds-text-color_weak slds-truncate" title="{! tileField.label }">{! tileField.label }</dt>
+                                </aura:if>
+                                <dd class="{! 'slds-item_detail' +tileField.size + tileField.align }" title="{! tileField.value }">
+                                    <lightning:formattedRichText value="{! tileField.value }"/>
+                                </dd>
+                            </aura:if>
+                        </div>
+                    </aura:iteration>
+                </dl>
+            </div>
+        </article>
+    </lightning:layoutItem>
+</aura:component>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Today_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>Employee__c</columns>
+    <columns>Requested_Date__c</columns>
+    <columns>Status__c</columns>
+    <columns>Location__c</columns>
+    <columns>Reason_for_Request__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Approved</value>
+    </filters>
+    <filters>
+        <field>Date_of_Request__c</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Today Approved Requests</label>
+</ListView>

@@ -1,0 +1,15 @@
+Dear {!User.FirstName},
+<br><br>
+Your access request named {!Employee_Request__c.Name} has been accepted and does not require further approval.
+<br><br>
+Details:
+<br>
+Office Location: {!Employee_Request__c.Location__c}
+<br>
+Requested Date: {!Employee_Request__c.Date_of_Request__c}
+<br>
+Requested Slot: {!Employee_Request__c.Requested_Slot__c}
+<br><br>
+Please present the QRCode at the Office Reception:
+<br>
+<img src="{!Employee_Request__c.QR_Code_Text_URL__c}"/>

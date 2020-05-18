@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Number_of_Sanifications_Done__c</fullName>
+    <externalId>false</externalId>
+    <label>Number of Sanifications Done</label>
+    <summaryForeignKey>Sanitization__c.Location_sanitization__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>AB_Request Denied</name>
+    <style>none</style>
+    <subject>Your request has been denied.</subject>
+    <textOnly>Your recent request has been denied!
+
+Details:
+{!Employee_Request__c.Location__c}
+{!Employee_Request__c.Requested_Date__c}
+{!Employee_Request__c.Requested_Slot__c}
+
+
+Thanks!</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

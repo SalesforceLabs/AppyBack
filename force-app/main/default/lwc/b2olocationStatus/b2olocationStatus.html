@@ -1,0 +1,38 @@
+<template>
+    <lightning-card class="slds-text-heading_small slds-card_boundary" title="Location Status" icon-name="custom:custom63">
+        <div style="height: 150px;" class="slds-m-around_medium">
+           
+           <div style="height: 150px;" class="slds-m-around_medium">
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-text-body_regular">
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Office">Office Location</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="City">City</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Status">Status</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template if:true={sobjectResult}>
+                        <template for:each={sobjectResult} for:item="so">
+                            <tr class="slds-hint-parent" key={so.id}>
+                                <td data-label="Name"> {so.fields.Name.value}</td>
+                                <td data-label="Type"> {so.fields.City__c.value}</td>
+                                <td data-label="Phone"> {so.fields.Status__c.value}</td>
+                            </tr>
+                        </template>
+                    </template>
+                    <template if:false={sobjectResult}>
+                        List View does not contains data
+                    </template>
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </lightning-card>
+</template>

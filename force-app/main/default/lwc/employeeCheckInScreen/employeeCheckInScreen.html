@@ -1,0 +1,16 @@
+<template>
+    <lightning-record-view-form record-id={recordId} object-api-name="Employee_Request__c">
+        <lightning-card title="Employee Check-in" icon-name="standard:scan_card">
+            <div class="slds-m-top_medium slds-m-bottom_x-large">
+                    <lightning-file-upload
+                    label="Scan QR Code"
+                    name="fileUploader"
+                    accept={acceptedFormats}
+                    record-id={recordId}
+                    onuploadfinished={handleUploadFinished}
+                    multiple>
+                </lightning-file-upload>
+            </div>
+        </lightning-card>
+    </lightning-record-view-form>
+</template>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requested_Slot__c</fullName>
+    <externalId>false</externalId>
+    <label>Requested Slot</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Full Day</fullName>
+                <default>false</default>
+                <label>Full Day</label>
+            </value>
+            <value>
+                <fullName>Morning</fullName>
+                <default>false</default>
+                <label>Morning</label>
+            </value>
+            <value>
+                <fullName>Afternoon</fullName>
+                <default>false</default>
+                <label>Afternoon</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
