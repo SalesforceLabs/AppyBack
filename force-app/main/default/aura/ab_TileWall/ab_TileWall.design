@@ -1,0 +1,77 @@
+<design:component label="ab Tile Wall">
+    
+    <design:attribute name="title" label="Title" />
+    <design:attribute name="displayCount" label="Display Record Count" description="Display Record Count in Title" />
+    <design:attribute name="backgroundColor" label="Tile Wall Background Color" default="#FFFFFF" />
+    <design:attribute name="objApiName" required="true" label="Object API Name" />
+    <design:attribute name="sortBy" label="Sort By" description="Fieldname ASC|DESC, comma separate fields if you need to sort on multiple." />
+    <design:attribute name="soqlQuery" label="SOQL Query" description="Optional query eg Status = 'Closed'; use {{recordid}} to pass in the record's Id on a record page - eg AccountId = '{{recordid}}'" />
+
+    <design:attribute name="allowSearch" label="Allow Search" default="true" />
+    <design:attribute name="searchLabel" required="true" label="Search Label" description="Label for search box" default="Search"/>
+    <design:attribute name="noResultsText" required="true" label="No Search Results Text" default="No results found, try searching for something else!" />
+    
+    <design:attribute name="heightOption" label="Tile Height" datasource="max-row,fixed,individual" description="Max-Row: Tile auto-size height to fit contents, each tile in a row will be the same height; Fixed: Fixed at specified height; Individual: Each tile sized to fit content." default="max-row"/>
+    <design:attribute name="fixedHeight" label="Fixed Height (px.)" description="Height (pixels or %) if fixed, include px or %" />
+    
+    <design:attribute name="pageLimit" required="true" label="Results per Page" default="12" />
+    <design:attribute name="columnsLarge" required="true" label="Tiles per Row (Desktop)" datasource="1,2,3,4,6,12" default="4" />
+    <design:attribute name="columnsMedium" required="true" label="Tiles per Row (Tablet)" datasource="1,2,3,4,6,12" default="3" />
+    <design:attribute name="columnsSmall" required="true" label="Tiles per Row (Mobile)" datasource="1,2,3,4,6,12" default="1" />
+
+    <design:attribute name="bgColor" label="Tile Background Color" default="#FFFFFF" description="Use {{fieldname}} with a formula field for dynamic color selection." />
+    <design:attribute name="bgImageURL" label="Tile Background Image URL" description="Image overrides Color" />
+    <design:attribute name="bgImageFieldName" label="Tile Background Image Field API Name" description="Image Field overrides others"/>
+    <design:attribute name="bgSize" label="Tile Background Image Size" description="auto|length|cover|contain|initial|inherit" />
+    <design:attribute name="bgOpacity" label="Tile Background Opacity" description="Opacity doesn't work on iOS, tiles will fallback to default background color (no background image)."/>
+    
+    <design:attribute name="name_Field0" required="false" label="Title Field API Name" />
+    <design:attribute name="size_Field0" label="Title Size" datasource="body_regular,body_small,heading_large,heading_medium,heading_small" default="body_regular" />
+    <design:attribute name="case_Field0" label="Title Case Display" datasource="default,lowercase,uppercase" default="default" />
+    <design:attribute name="align_Field0" label="Title Alignment" datasource="left,center,right" default="center" />
+    
+    <design:attribute name="name_Badge1" label="Badge 1 API Name" />
+    <design:attribute name="label_Badge1" label="Badge 1 Label" />
+    <design:attribute name="color_Badge1" label="Badge 1 Color" default="#080707" description="Use {{fieldname}} with a formula field for dynamic color selection." />
+    <design:attribute name="bgcolor_Badge1" label="Badge 1 BG Color" default="#ECEBEA" description="Use {{fieldname}} with a formula field for dynamic color selection." />
+    
+    <design:attribute name="name_Badge2" label="Badge 2 API Name" />
+    <design:attribute name="label_Badge2" label="Badge 2 Label" />
+    <design:attribute name="color_Badge2" label="Badge 2 Color" default="#080707" description="Use {{fieldname}} with a formula field for dynamic color selection." />
+    <design:attribute name="bgcolor_Badge2" label="Badge 2 BG Color" default="#ECEBEA" description="Use {{fieldname}} with a formula field for dynamic color selection." />
+    
+    <design:attribute name="name_Badge3" label="Badge 3 API Name" />
+    <design:attribute name="label_Badge3" label="Badge 3 Label" />
+    <design:attribute name="color_Badge3" label="Badge 3 Color" default="#080707" description="Use {{fieldname}} with a formula field for dynamic color selection." />
+    <design:attribute name="bgcolor_Badge3" label="Badge 3 BG Color" default="#ECEBEA" description="Use {{fieldname}} with a formula field for dynamic color selection." />
+    
+    <design:attribute name="name_Badge4" label="Badge 4 API Name" />
+    <design:attribute name="label_Badge4" label="Badge 4 Label" />
+    <design:attribute name="color_Badge4" label="Badge 4 Color" default="#080707" description="Use {{fieldname}} with a formula field for dynamic color selection." />
+    <design:attribute name="bgcolor_Badge4" label="Badge 4 BG Color" default="#ECEBEA" description="Use {{fieldname}} with a formula field for dynamic color selection." />
+    
+    <design:attribute name="name_Field1" label="Field 1 API Name" />
+    <design:attribute name="label_Field1" label="Field 1 Label" />
+    <design:attribute name="size_Field1" label="Field 1 Size" datasource="body_regular,body_small,heading_large,heading_medium,heading_small" default="body_regular" />
+    <design:attribute name="case_Field1" label="Field 1 Case Display" datasource="default,lowercase,uppercase" default="default" />
+    <design:attribute name="align_Field1" label="Field 1 Alignment" datasource="left,center,right" default="left" />
+    
+    <design:attribute name="name_Field2" label="Field 2 API Name" />
+    <design:attribute name="label_Field2" label="Field 2 Label" />
+    <design:attribute name="size_Field2" label="Field 2 Size" datasource="body_regular,body_small,heading_large,heading_medium,heading_small" default="body_regular" />
+    <design:attribute name="case_Field2" label="Field 2 Case Display" datasource="default,lowercase,uppercase" default="default" />
+    <design:attribute name="align_Field2" label="Field 2 Alignment" datasource="left,center,right" default="left" />
+    
+    <design:attribute name="name_Field3" label="Field 3 API Name" />
+    <design:attribute name="label_Field3" label="Field 3 Label" />
+    <design:attribute name="size_Field3" label="Field 3 Size" datasource="body_regular,body_small,heading_large,heading_medium,heading_small" default="body_regular" />
+    <design:attribute name="case_Field3" label="Field 3 Case Display" datasource="default,lowercase,uppercase" default="default" />
+    <design:attribute name="align_Field3" label="Field 3 Alignment" datasource="left,center,right" default="left" />
+    
+    <design:attribute name="name_Field4" label="Field 4 API Name" />
+    <design:attribute name="label_Field4" label="Field 4 Label" />
+    <design:attribute name="size_Field4" label="Field 4 Size" datasource="body_regular,body_small,heading_large,heading_medium,heading_small" default="body_regular" />
+    <design:attribute name="case_Field4" label="Field 4 Case Display" datasource="default,lowercase,uppercase" default="default" />
+    <design:attribute name="align_Field4" label="Field 4 Alignment" datasource="left,center,right" default="left" />
+        
+</design:component>

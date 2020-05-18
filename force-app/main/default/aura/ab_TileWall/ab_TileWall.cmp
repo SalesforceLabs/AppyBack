@@ -1,0 +1,143 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes,force:hasRecordId" controller="ab_TileWallApexController">
+        
+    <aura:attribute name="recordId" type="Id" />
+    
+    <aura:attribute name="title" type="String" />
+    <aura:attribute name="backgroundColor" type="String" />
+    
+    <aura:attribute name="displayCount" type="Boolean" default="false" />
+    <aura:attribute name="objApiName" type="String" />
+
+    <aura:attribute name="allowSearch" type="Boolean" />
+    <aura:attribute name="searchLabel" type="String" />
+    
+    <aura:attribute name="heightOption" type="String" />
+    <aura:attribute name="fixedHeight" type="String" />
+    
+    <aura:attribute name="pageLimit" type="Integer" />
+    <aura:attribute name="sortBy" type="String" />
+    <aura:attribute name="soqlQuery" type="String" />
+    
+    <aura:attribute name="noResultsText" type="String" />
+    <aura:attribute name="columnsLarge" type="String" />
+    <aura:attribute name="columnsMedium" type="String" />
+    <aura:attribute name="columnsSmall" type="String" />
+
+    <aura:attribute name="bgColor" type="String" />
+    <aura:attribute name="bgImageURL" type="String" />
+    <aura:attribute name="bgImageFieldName" type="String" />
+    <aura:attribute name="bgOpacity" type="String" />
+    <aura:attribute name="bgSize" type="String" />
+    
+    <aura:attribute name="name_Field0" type="String" />
+    <aura:attribute name="label_Field0" type="String" />
+    <aura:attribute name="size_Field0" type="String" />
+    <aura:attribute name="case_Field0" type="String" />
+    <aura:attribute name="align_Field0" type="String" />
+
+    <aura:attribute name="name_Field1" type="String" />
+    <aura:attribute name="label_Field1" type="String" />
+    <aura:attribute name="size_Field1" type="String" />
+    <aura:attribute name="case_Field1" type="String" />
+    <aura:attribute name="align_Field1" type="String" />
+
+    <aura:attribute name="name_Field2" type="String" />
+    <aura:attribute name="label_Field2" type="String" />
+    <aura:attribute name="size_Field2" type="String" />
+    <aura:attribute name="case_Field2" type="String" />
+    <aura:attribute name="align_Field2" type="String" />
+
+    <aura:attribute name="name_Field3" type="String" />
+    <aura:attribute name="label_Field3" type="String" />
+    <aura:attribute name="size_Field3" type="String" />
+    <aura:attribute name="case_Field3" type="String" />
+    <aura:attribute name="align_Field3" type="String" />
+
+    <aura:attribute name="name_Field4" type="String" />
+    <aura:attribute name="label_Field4" type="String" />
+    <aura:attribute name="size_Field4" type="String" />
+    <aura:attribute name="case_Field4" type="String" />
+    <aura:attribute name="align_Field4" type="String" />
+    
+    <aura:attribute name="name_Badge1" type="String" />
+    <aura:attribute name="label_Badge1" type="String" />
+    <aura:attribute name="color_Badge1" type="String" />
+    <aura:attribute name="bgcolor_Badge1" type="String" />
+    
+    <aura:attribute name="name_Badge2" type="String" />
+    <aura:attribute name="label_Badge2" type="String" />
+    <aura:attribute name="color_Badge2" type="String" />
+    <aura:attribute name="bgcolor_Badge2" type="String" />
+    
+    <aura:attribute name="name_Badge3" type="String" />
+    <aura:attribute name="label_Badge3" type="String" />
+    <aura:attribute name="color_Badge3" type="String" />
+    <aura:attribute name="bgcolor_Badge3" type="String" />
+    
+    <aura:attribute name="name_Badge4" type="String" />
+    <aura:attribute name="label_Badge4" type="String" />
+    <aura:attribute name="color_Badge4" type="String" />
+    <aura:attribute name="bgcolor_Badge4" type="String" />
+    
+    <aura:attribute name="tileProperties" type="object" />
+
+    <aura:attribute name="sizeLarge" type="Integer" />
+    <aura:attribute name="sizeMedium" type="Integer" />
+    <aura:attribute name="sizeSmall" type="Integer" />
+    
+    <aura:attribute name="activeScreen" type="String" default="SearchBox" />
+    <aura:attribute name="noResults" type="Boolean" default="false" />
+
+    <aura:attribute name="searchResults" type="List" />
+    <aura:attribute name="tileResults" type="List" />
+    <aura:attribute name="pageNumber" type="Integer" default="1" />
+    <aura:attribute name="recordCount" type="Integer" />
+    <aura:attribute name="morePages" type="Boolean" default="true" />
+        
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <div style="{! if(v.backgroundColor, 'background-color: '+v.backgroundColor+';')}" class="slds-card slds-p-around--small">
+    
+    	<aura:if isTrue="{! v.title }">
+        	<div class="slds-card__header-link">
+            	<span class="slds-card__header-title slds-m-right--xx-small">{!v.title}</span>
+            	<aura:if isTrue="{! v.displayCount }">
+            		<span class="slds-card__header-title">({!v.recordCount})</span>
+        		</aura:if>
+        	</div>
+    	</aura:if>
+    
+		<aura:if isTrue="{! v.allowSearch }">
+        	<div class="slds-m-vertical--small">
+            	<div class="slds-text-heading_small">{! v.searchLabel }</div>
+            	<lightning:input
+        			aura:id="enter-search"
+            		name="enter-search"
+            		type="search"
+            		label="{! v.searchLabel }"
+            		variant="label-hidden" 
+            		onchange="{! c.handleSearch }"
+        		/>
+        	</div>
+    	
+        	<aura:if isTrue="{! v.noResults }">
+        		{! v.noResultsText }
+        	</aura:if>
+        
+    	</aura:if>
+    
+    	<aura:if isTrue="{! !v.noResults }">
+        	<lightning:layout pullToBoundary="small" verticalAlign="stretch" multipleRows="true">
+            	{!v.tileResults}
+        	</lightning:layout>
+        	<aura:if isTrue="{! v.morePages }">
+        		<div class="slds-m-vertical--xsmall" style="position:relative; text-align:center;">
+        	    	<lightning:button aura:id="spinner" label="Load More" onclick="{! c.loadMore }"/>
+        	    	<lightning:spinner aura:id="spinner" class="hide" variant="base" size="small" />
+        		</div>
+        	</aura:if>
+    	</aura:if>
+        
+   	</div>
+    
+</aura:component>

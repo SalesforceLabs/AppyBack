@@ -1,0 +1,9 @@
+.THIS .tile-style {
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.THIS .hideMe {
+    display: none !important;
+}

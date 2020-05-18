@@ -1,0 +1,11 @@
+Your recent request has been denied!
+<br><br>
+Details:<br>
+{!Employee_Request__c.Location__c}
+<br>
+{!Employee_Request__c.Requested_Date__c}
+<br>
+{!Employee_Request__c.Requested_Slot__c}
+<br><br><br>
+
+Thanks!

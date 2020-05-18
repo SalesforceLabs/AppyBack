@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DynamicBadgeSet__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Status__c),
+&quot;New&quot;, &quot;#a7f0f6&quot;,
+&quot;Urgent&quot;, &quot;#EE0000&quot;,
+&quot;Normal&quot;, &quot;#09dc37&quot;,
+&quot;Old&quot;, &quot;#080707&quot;,
+&quot;#DADADA&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>DynamicBadgeSet</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

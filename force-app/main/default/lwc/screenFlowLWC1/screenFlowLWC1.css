@@ -1,0 +1,12 @@
+.backgroundInverse {
+    background-color: #16325c;
+    padding: 12px;
+}
+
+lightning-button.fullDay,
+lightning-button.morningDay,
+lightning-button.afternoonDay{
+    padding: 5px;
+    position: relative;
+    display: grid;
+}

@@ -1,0 +1,30 @@
+<template>
+  <lightning-card>
+    <!-- Welcome text for users-->
+    <p></p>
+    <p style="text-align:center">
+      <lightning-formatted-text value="Please complete the simple steps to gain access to your preferred office"></lightning-formatted-text>
+    </p>
+    <p></p>
+
+    <!-- Office Location Combo-->
+    <div class="slds-m-around_medium">
+      <lightning-combobox label="Office Location" value={locationValue} placeholder="Select Location" options={locationItems} onchange={handleLocationChange}>
+      </lightning-combobox>
+    </div>
+
+    <div class="slds-m-around_medium">
+      <lightning-combobox label="Choose Date" disabled={dateDisabled} value={dateValue} placeholder="Select Date" options={dateOptions} onchange={handleDateChange}>
+      </lightning-combobox>
+    </div>
+
+    <!-- Slot selection -->
+    <div class="slds-m-around_medium">
+      <label class="slds-form-element__label">Available slots</label>
+      <br />
+      <lightning-button class="fullDay" disabled={fullDayDisabled} label="Full Day" onclick={handleClick}></lightning-button>
+      <lightning-button class="morningDay" disabled={morningDisabled} label="Morning" onclick={handleClick}></lightning-button>
+      <lightning-button class="afternoonDay" disabled={afternoonDisabled} label="Afternoon" onclick={handleClick}></lightning-button>
+    </div>
+  </lightning-card>
+</template>

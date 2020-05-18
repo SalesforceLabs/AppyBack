@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_edit_if_close</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISCHANGED( Covid_19__c ), ISPICKVAL(PRIORVALUE( Covid_19__c), &quot;Marked Safe&quot;), NOT(ISPICKVAL( Covid_19__c , &quot;Marked Safe&quot;)))</errorConditionFormula>
+    <errorDisplayField>Covid_19__c</errorDisplayField>
+    <errorMessage>It is not possible to modify this value. A new record is required</errorMessage>
+</ValidationRule>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Employee_Request_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Employee_Request__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Employee_Request_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Employee_Request__c</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#3A9DDD</headerColor>
+        <logo>astro</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>AppyBack</label>
+    <navType>Standard</navType>
+    <tabs>standard-Today</tabs>
+    <tabs>standard-home</tabs>
+    <tabs>Company_News__c</tabs>
+    <tabs>Employee_Request__c</tabs>
+    <tabs>Location_Daily_Info__c</tabs>
+    <tabs>Location__c</tabs>
+    <tabs>Location_Administration__c</tabs>
+    <tabs>Sanitization__c</tabs>
+    <tabs>Medical__c</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-report</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Back_to_Work_UtilityBar</utilityBar>
+</CustomApplication>

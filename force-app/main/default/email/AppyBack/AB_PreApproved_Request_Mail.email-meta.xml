@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>AB PreApproved Request Mail</name>
+    <style>none</style>
+    <subject>Your request {!Employee_Request__c.Name} has been approved.</subject>
+    <textOnly>Dear {!User.FirstName},  Your access request named {!Employee_Request__c.Name} has been accepted and does not require further approval.  Details: Office Location: {!Employee_Request__c.Location__c} Requested Date: {!Employee_Request__c.Date_of_Request__c} Requested Slot: {!Employee_Request__c.Requested_Slot__c}  Please present the QRCode at the Office Reception: {!Employee_Request__c.QR_Code__c}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
