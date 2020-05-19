@@ -1,98 +1,98 @@
 <aura:component implements="forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes,force:hasRecordId" access="global" controller="ab_TileWallApexController">
         
-    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="recordId" type="Id" access="global" />
     
-    <aura:attribute name="title" type="String" />
-    <aura:attribute name="backgroundColor" type="String" />
+    <aura:attribute name="title" type="String" access="global" />
+    <aura:attribute name="backgroundColor" type="String" access="global"/>
     
-    <aura:attribute name="displayCount" type="Boolean" default="false" />
-    <aura:attribute name="objApiName" type="String" />
+    <aura:attribute name="displayCount" type="Boolean" default="false" access="global"/>
+    <aura:attribute name="objApiName" type="String" access="global"/>
 
-    <aura:attribute name="allowSearch" type="Boolean" />
-    <aura:attribute name="searchLabel" type="String" />
+    <aura:attribute name="allowSearch" type="Boolean" access="global"/>
+    <aura:attribute name="searchLabel" type="String" access="global"/>
     
-    <aura:attribute name="heightOption" type="String" />
-    <aura:attribute name="fixedHeight" type="String" />
+    <aura:attribute name="heightOption" type="String" access="global"/>
+    <aura:attribute name="fixedHeight" type="String" access="global" />
     
-    <aura:attribute name="pageLimit" type="Integer" />
-    <aura:attribute name="sortBy" type="String" />
-    <aura:attribute name="soqlQuery" type="String" />
+    <aura:attribute name="pageLimit" type="Integer" access="global"/>
+    <aura:attribute name="sortBy" type="String" access="global"/>
+    <aura:attribute name="soqlQuery" type="String" access="global"/>
     
-    <aura:attribute name="noResultsText" type="String" />
-    <aura:attribute name="columnsLarge" type="String" />
-    <aura:attribute name="columnsMedium" type="String" />
-    <aura:attribute name="columnsSmall" type="String" />
+    <aura:attribute name="noResultsText" type="String" access="global"/>
+    <aura:attribute name="columnsLarge" type="String" access="global"/>
+    <aura:attribute name="columnsMedium" type="String" access="global"/>
+    <aura:attribute name="columnsSmall" type="String" access="global"/>
 
-    <aura:attribute name="bgColor" type="String" />
-    <aura:attribute name="bgImageURL" type="String" />
-    <aura:attribute name="bgImageFieldName" type="String" />
-    <aura:attribute name="bgOpacity" type="String" />
-    <aura:attribute name="bgSize" type="String" />
+    <aura:attribute name="bgColor" type="String" access="global"/>
+    <aura:attribute name="bgImageURL" type="String" access="global"/>
+    <aura:attribute name="bgImageFieldName" type="String" access="global"/>
+    <aura:attribute name="bgOpacity" type="String" access="global"/>
+    <aura:attribute name="bgSize" type="String" access="global"/>
     
-    <aura:attribute name="name_Field0" type="String" />
-    <aura:attribute name="label_Field0" type="String" />
-    <aura:attribute name="size_Field0" type="String" />
-    <aura:attribute name="case_Field0" type="String" />
-    <aura:attribute name="align_Field0" type="String" />
+    <aura:attribute name="name_Field0" type="String" access="global"/>
+    <aura:attribute name="label_Field0" type="String" access="global"/>
+    <aura:attribute name="size_Field0" type="String" access="global"/>
+    <aura:attribute name="case_Field0" type="String" access="global"/>
+    <aura:attribute name="align_Field0" type="String" access="global"/>
 
-    <aura:attribute name="name_Field1" type="String" />
-    <aura:attribute name="label_Field1" type="String" />
-    <aura:attribute name="size_Field1" type="String" />
-    <aura:attribute name="case_Field1" type="String" />
-    <aura:attribute name="align_Field1" type="String" />
+    <aura:attribute name="name_Field1" type="String" access="global"/>
+    <aura:attribute name="label_Field1" type="String" access="global"/>
+    <aura:attribute name="size_Field1" type="String" access="global"/>
+    <aura:attribute name="case_Field1" type="String" access="global"/>
+    <aura:attribute name="align_Field1" type="String" access="global"/>
 
-    <aura:attribute name="name_Field2" type="String" />
-    <aura:attribute name="label_Field2" type="String" />
-    <aura:attribute name="size_Field2" type="String" />
-    <aura:attribute name="case_Field2" type="String" />
-    <aura:attribute name="align_Field2" type="String" />
+    <aura:attribute name="name_Field2" type="String" access="global"/>
+    <aura:attribute name="label_Field2" type="String" access="global"/>
+    <aura:attribute name="size_Field2" type="String" access="global"/>
+    <aura:attribute name="case_Field2" type="String" access="global"/>
+    <aura:attribute name="align_Field2" type="String" access="global"/>
 
-    <aura:attribute name="name_Field3" type="String" />
-    <aura:attribute name="label_Field3" type="String" />
-    <aura:attribute name="size_Field3" type="String" />
-    <aura:attribute name="case_Field3" type="String" />
-    <aura:attribute name="align_Field3" type="String" />
+    <aura:attribute name="name_Field3" type="String" access="global"/>
+    <aura:attribute name="label_Field3" type="String" access="global"/>
+    <aura:attribute name="size_Field3" type="String" access="global"/>
+    <aura:attribute name="case_Field3" type="String" access="global"/>
+    <aura:attribute name="align_Field3" type="String" access="global"/>
 
-    <aura:attribute name="name_Field4" type="String" />
-    <aura:attribute name="label_Field4" type="String" />
-    <aura:attribute name="size_Field4" type="String" />
-    <aura:attribute name="case_Field4" type="String" />
-    <aura:attribute name="align_Field4" type="String" />
+    <aura:attribute name="name_Field4" type="String" access="global"/>
+    <aura:attribute name="label_Field4" type="String" access="global"/>
+    <aura:attribute name="size_Field4" type="String" access="global"/>
+    <aura:attribute name="case_Field4" type="String" access="global"/>
+    <aura:attribute name="align_Field4" type="String" access="global"/>
     
-    <aura:attribute name="name_Badge1" type="String" />
-    <aura:attribute name="label_Badge1" type="String" />
-    <aura:attribute name="color_Badge1" type="String" />
-    <aura:attribute name="bgcolor_Badge1" type="String" />
+    <aura:attribute name="name_Badge1" type="String" access="global"/>
+    <aura:attribute name="label_Badge1" type="String" access="global"/>
+    <aura:attribute name="color_Badge1" type="String" access="global"/>
+    <aura:attribute name="bgcolor_Badge1" type="String" access="global"/>
     
-    <aura:attribute name="name_Badge2" type="String" />
-    <aura:attribute name="label_Badge2" type="String" />
-    <aura:attribute name="color_Badge2" type="String" />
-    <aura:attribute name="bgcolor_Badge2" type="String" />
+    <aura:attribute name="name_Badge2" type="String" access="global"/>
+    <aura:attribute name="label_Badge2" type="String" access="global"/>
+    <aura:attribute name="color_Badge2" type="String" access="global"/>
+    <aura:attribute name="bgcolor_Badge2" type="String" access="global"/>
     
-    <aura:attribute name="name_Badge3" type="String" />
-    <aura:attribute name="label_Badge3" type="String" />
-    <aura:attribute name="color_Badge3" type="String" />
-    <aura:attribute name="bgcolor_Badge3" type="String" />
+    <aura:attribute name="name_Badge3" type="String" access="global"/>
+    <aura:attribute name="label_Badge3" type="String" access="global"/>
+    <aura:attribute name="color_Badge3" type="String" access="global"/>
+    <aura:attribute name="bgcolor_Badge3" type="String" access="global"/>
     
-    <aura:attribute name="name_Badge4" type="String" />
-    <aura:attribute name="label_Badge4" type="String" />
-    <aura:attribute name="color_Badge4" type="String" />
-    <aura:attribute name="bgcolor_Badge4" type="String" />
+    <aura:attribute name="name_Badge4" type="String" access="global"/>
+    <aura:attribute name="label_Badge4" type="String" access="global"/>
+    <aura:attribute name="color_Badge4" type="String" access="global"/>
+    <aura:attribute name="bgcolor_Badge4" type="String" access="global"/>
     
-    <aura:attribute name="tileProperties" type="object" />
+    <aura:attribute name="tileProperties" type="object" access="global"/>
 
-    <aura:attribute name="sizeLarge" type="Integer" />
-    <aura:attribute name="sizeMedium" type="Integer" />
-    <aura:attribute name="sizeSmall" type="Integer" />
+    <aura:attribute name="sizeLarge" type="Integer" access="global"/>
+    <aura:attribute name="sizeMedium" type="Integer" access="global"/>
+    <aura:attribute name="sizeSmall" type="Integer" access="global"/>
     
-    <aura:attribute name="activeScreen" type="String" default="SearchBox" />
-    <aura:attribute name="noResults" type="Boolean" default="false" />
+    <aura:attribute name="activeScreen" type="String" default="SearchBox" access="global"/>
+    <aura:attribute name="noResults" type="Boolean" default="false" access="global" />
 
-    <aura:attribute name="searchResults" type="List" />
-    <aura:attribute name="tileResults" type="List" />
-    <aura:attribute name="pageNumber" type="Integer" default="1" />
-    <aura:attribute name="recordCount" type="Integer" />
-    <aura:attribute name="morePages" type="Boolean" default="true" />
+    <aura:attribute name="searchResults" type="List" access="global"/>
+    <aura:attribute name="tileResults" type="List" access="global"/>
+    <aura:attribute name="pageNumber" type="Integer" default="1" access="global" />
+    <aura:attribute name="recordCount" type="Integer" access="global"/>
+    <aura:attribute name="morePages" type="Boolean" default="true" access="global"/>
         
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
     
