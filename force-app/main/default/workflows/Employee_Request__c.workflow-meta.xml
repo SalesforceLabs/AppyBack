@@ -32,8 +32,28 @@
         <template>AppyBack/AB_Approved_Request_Mail</template>
     </alerts>
     <alerts>
+        <fullName>Request_Approved_by_Manager</fullName>
+        <description>Request Approved by Manager</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>AppyBack/AB_Approved_Request_Mail</template>
+    </alerts>
+    <alerts>
         <fullName>Request_Denied</fullName>
         <description>Request Denied</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>AppyBack/AB_Request_Denied</template>
+    </alerts>
+    <alerts>
+        <fullName>Request_Denied_by_Manager</fullName>
+        <description>Request Denied by Manager</description>
         <protected>false</protected>
         <recipients>
             <type>owner</type>
@@ -46,6 +66,15 @@
         <field>Status__c</field>
         <literalValue>Approved</literalValue>
         <name>Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Change_Status_to_Approve</fullName>
+        <field>Approved__c</field>
+        <literalValue>1</literalValue>
+        <name>Change Status to Approve</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
         <protected>false</protected>
@@ -75,6 +104,24 @@
         <name>Reject</name>
         <notifyAssignee>false</notifyAssignee>
         <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Rejected</fullName>
+        <field>Status__c</field>
+        <literalValue>Denied</literalValue>
+        <name>Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Approval_Date</fullName>
+        <field>Approved_Date__c</field>
+        <formula>TODAY()</formula>
+        <name>Set Approval Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
