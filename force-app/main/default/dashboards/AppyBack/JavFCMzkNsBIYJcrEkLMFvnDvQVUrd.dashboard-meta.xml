@@ -9,31 +9,15 @@
     <dashboardColorPalette>unity</dashboardColorPalette>
     <dashboardFilters>
         <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Milan Office</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>Rome Office</values>
+            <operator>contains</operator>
+            <values>Location</values>
         </dashboardFilterOptions>
         <name>Location</name>
     </dashboardFilters>
     <dashboardFilters>
         <dashboardFilterOptions>
             <operator>equals</operator>
-            <values>TODAY</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>LAST_WEEK</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>LAST_MONTH</values>
-        </dashboardFilterOptions>
-        <dashboardFilterOptions>
-            <operator>equals</operator>
-            <values>LAST_YEAR</values>
+            <values>TODAY,NEXT_N_DAYS:30</values>
         </dashboardFilterOptions>
         <name>Date</name>
     </dashboardFilters>
@@ -134,7 +118,7 @@
     </dashboardGridLayout>
     <dashboardType>LoggedInUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>test-ptgnmmnc43oi@example.com</runningUser>
+    <runningUser>test-s1frnorzkkeb@example.com</runningUser>
     <textColor>#000000</textColor>
     <title>Front Desk Dashboard</title>
     <titleColor>#000000</titleColor>

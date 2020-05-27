@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <actionCalls>
-        <description>Employee_Req_Approval</description>
-        <name>Employee_req_Approval</name>
-        <label>Employee_Req_Approval</label>
-        <locationX>2314</locationX>
+        <description>Employee Approval process launch !</description>
+        <name>Request_Approval</name>
+        <label>Request_Approval</label>
+        <locationX>2315</locationX>
         <locationY>351</locationY>
         <actionName>submit</actionName>
         <actionType>submit</actionType>
@@ -1126,7 +1126,7 @@ Version 21 is the functioning version (NO MASTER-DETAIL)</description>
         <locationX>2171</locationX>
         <locationY>351</locationY>
         <connector>
-            <targetReference>Employee_req_Approval</targetReference>
+            <targetReference>Request_Approval</targetReference>
         </connector>
         <filters>
             <field>Id</field>
