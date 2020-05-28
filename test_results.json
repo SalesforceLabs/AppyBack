@@ -1,0 +1,50 @@
+[
+    {
+        "Children": null,
+        "ClassName": "ab_TileWall_Tests",
+        "Method": "TestGetAll",
+        "Message": null,
+        "Outcome": "Pass",
+        "StackTrace": null,
+        "Stats": {
+            "duration": 61
+        },
+        "TestTimestamp": "2020-05-27T16:54:32.000+0000"
+    },
+    {
+        "Children": null,
+        "ClassName": "ab_TileWall_Tests",
+        "Method": "TestSOQLQuery",
+        "Message": null,
+        "Outcome": "Pass",
+        "StackTrace": null,
+        "Stats": {
+            "duration": 30
+        },
+        "TestTimestamp": "2020-05-27T16:54:32.000+0000"
+    },
+    {
+        "Children": null,
+        "ClassName": "ab_TileWall_Tests",
+        "Method": "TestSOQLQuerySearch",
+        "Message": null,
+        "Outcome": "Pass",
+        "StackTrace": null,
+        "Stats": {
+            "duration": 45
+        },
+        "TestTimestamp": "2020-05-27T16:54:32.000+0000"
+    },
+    {
+        "Children": null,
+        "ClassName": "ab_TileWall_Tests",
+        "Method": "TestSearch",
+        "Message": null,
+        "Outcome": "Pass",
+        "StackTrace": null,
+        "Stats": {
+            "duration": 13
+        },
+        "TestTimestamp": "2020-05-27T16:54:32.000+0000"
+    }
+]
