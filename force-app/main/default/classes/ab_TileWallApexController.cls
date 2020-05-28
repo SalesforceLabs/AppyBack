@@ -1,4 +1,4 @@
-public class ab_TileWallApexController {
+public with sharing class ab_TileWallApexController {
 @AuraEnabled
     public static RecordsResult GetAll(String objApiName, String fieldsStr, Integer pageLimit, Integer pageNumber, String soqlQuery, String sortBy, String recordId) {
         

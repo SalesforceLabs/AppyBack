@@ -1,4 +1,8 @@
 <testsuite tests="4">
+  <testcase classname="ab_TileWall_Tests" name="TestGetAll" time="61" />
+  <testcase classname="ab_TileWall_Tests" name="TestSOQLQuery" time="30" />
+  <testcase classname="ab_TileWall_Tests" name="TestSOQLQuerySearch" time="45" />
+  <testcase classname="ab_TileWall_Tests" name="TestSearch" time="13" />
   <testcase classname="ab_TileWall_Tests" name="TestGetAll" time="54" />
   <testcase classname="ab_TileWall_Tests" name="TestSOQLQuery" time="31" />
   <testcase classname="ab_TileWall_Tests" name="TestSOQLQuerySearch" time="58" />

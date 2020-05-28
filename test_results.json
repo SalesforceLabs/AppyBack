@@ -7,6 +7,9 @@
         "Outcome": "Pass",
         "StackTrace": null,
         "Stats": {
+            "duration": 61
+        },
+        "TestTimestamp": "2020-05-27T16:54:32.000+0000"
             "duration": 54
         },
         "TestTimestamp": "2020-05-19T20:20:52.000+0000"
@@ -19,6 +22,9 @@
         "Outcome": "Pass",
         "StackTrace": null,
         "Stats": {
+            "duration": 30
+        },
+        "TestTimestamp": "2020-05-27T16:54:32.000+0000"
             "duration": 31
         },
         "TestTimestamp": "2020-05-19T20:20:53.000+0000"
@@ -31,6 +37,9 @@
         "Outcome": "Pass",
         "StackTrace": null,
         "Stats": {
+            "duration": 45
+        },
+        "TestTimestamp": "2020-05-27T16:54:32.000+0000"
             "duration": 58
         },
         "TestTimestamp": "2020-05-19T20:20:53.000+0000"
@@ -43,6 +52,9 @@
         "Outcome": "Pass",
         "StackTrace": null,
         "Stats": {
+            "duration": 13
+        },
+        "TestTimestamp": "2020-05-27T16:54:32.000+0000"
             "duration": 15
         },
         "TestTimestamp": "2020-05-19T20:20:53.000+0000"
