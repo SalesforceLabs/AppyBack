@@ -139,7 +139,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>objApiName</name>
-                <value>Company_News__c</value>
+                <value>appysebback__Company_News__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>pageLimit</name>
@@ -175,7 +175,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>sortBy</name>
-                <value>Date_Posted__c DESC</value>
+                <value>appysebback__Date_Posted__c DESC</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>title</name>
@@ -221,7 +221,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>flowName</name>
-                <value>Add_Sanitization_Record</value>
+                <value>appysebback__Add_Sanitization_Record</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>hideButton</name>
@@ -244,7 +244,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>entityName</name>
-                <value>Location__c</value>
+                <value>appysebback__Location__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>filterName</name>
