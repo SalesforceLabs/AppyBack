@@ -52,7 +52,7 @@ export default class screenFlowLWC1 extends LightningElement {
             for (let i = 0; i < data.length; i++) {
                 theOptions.push({
                     value: data[i].Id,
-                    label: new Date(data[i].Date__c).toLocaleDateString()
+                    label: new Date(data[i].appysebback__Date__c).toLocaleDateString()
                 });
             }
             this.dateOptions = theOptions;

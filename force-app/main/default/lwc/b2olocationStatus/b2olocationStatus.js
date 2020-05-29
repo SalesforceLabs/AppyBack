@@ -1,7 +1,7 @@
 import { LightningElement, wire, track } from 'lwc';
 import { getListUi } from 'lightning/uiListApi'; 
 
-import OFFICE_LOCATION_OBJECT from '@salesforce/schema/Location__c';
+import OFFICE_LOCATION_OBJECT from '@salesforce/schema/appysebback__Location__c';
 
 export default class B2olocationStatus extends LightningElement {
     @track sobjectResult;
