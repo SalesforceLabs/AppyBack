@@ -1,7 +1,7 @@
 ({
 	init : function (component) {
         var flow = component.find("flowData");
-        flow.startFlow("appysebback__Book_Slot_at_Location");
+        flow.startFlow("Book_Slot_at_Location");
     },
     
     handleStatusChange : function (component, event, helper) {
