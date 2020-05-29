@@ -6,8 +6,8 @@ import { getListUi } from 'lightning/uiListApi';
 export default class B2olocationStatus extends LightningElement {
     @track sobjectResult;
     @wire(getListUi, {
-        objectApiName: 'appysebback.Location__c',
-        listViewApiName: 'appysebback.All'
+        objectApiName: 'appysebback__Location__c',
+        listViewApiName: 'appysebback__All'
     })
     wiredlistView({
         error,
