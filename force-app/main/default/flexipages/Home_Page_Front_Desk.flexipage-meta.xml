@@ -118,7 +118,7 @@
                 <value>max-row</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
-                <name>appysebback__label_Field1</name>
+                <name>label_Field1</name>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Badge1</name>
