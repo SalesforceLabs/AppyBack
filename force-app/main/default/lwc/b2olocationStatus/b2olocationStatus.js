@@ -1,13 +1,13 @@
 import { LightningElement, wire, track } from 'lwc';
 import { getListUi } from 'lightning/uiListApi'; 
 
-import OFFICE_LOCATION_OBJECT from '@salesforce/schema/appysebback.Location__c';
+//import OFFICE_LOCATION_OBJECT from '@salesforce/schema/Location__c';
 
 export default class B2olocationStatus extends LightningElement {
     @track sobjectResult;
     @wire(getListUi, {
-        objectApiName: OFFICE_LOCATION_OBJECT,
-        listViewApiName: 'All'
+        objectApiName: 'appysebback.Location__c',
+        listViewApiName: 'appysebback.All'
     })
     wiredlistView({
         error,
