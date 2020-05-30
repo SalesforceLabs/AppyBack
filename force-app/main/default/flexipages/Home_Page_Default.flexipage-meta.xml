@@ -135,7 +135,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Field2</name>
-                <value>Date_Posted__c</value>
+                <value>appysebback__Date_Posted__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>noResultsText</name>
