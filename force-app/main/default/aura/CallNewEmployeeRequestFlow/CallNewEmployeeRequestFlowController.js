@@ -13,7 +13,7 @@
 //    ];
 //     flow.startFlow("Book_Slot_at_Location_Desktop_HP_version",inputVariables);
 
-        flow.startFlow("Book_Slot_at_Location");
+        flow.startFlow("appysebback__Book_Slot_at_Location");
 	},
 
     handleStatusChange : function (component, event, helper) {
