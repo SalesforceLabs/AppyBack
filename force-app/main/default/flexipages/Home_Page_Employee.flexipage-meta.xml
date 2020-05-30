@@ -119,23 +119,23 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Badge1</name>
-                <value>Status__c</value>
+                <value>appysebback__Status__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Badge2</name>
-                <value>News_Type__c</value>
+                <value>appysebback__News_Type__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Field0</name>
-                <value>Headline__c</value>
+                <value>appysebback__Headline__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Field1</name>
-                <value>Description__c</value>
+                <value>appysebback__Description__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Field2</name>
-                <value>Date_Posted__c</value>
+                <value>appysebback__Date_Posted__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>noResultsText</name>
