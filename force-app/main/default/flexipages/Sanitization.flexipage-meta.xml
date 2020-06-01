@@ -9,7 +9,7 @@
         <type>Region</type>
     </flexiPageRegions>
     <masterLabel>Sanitization</masterLabel>
-    <sobjectType>appysebback__Sanitization__c</sobjectType>
+    <sobjectType>appyback__Sanitization__c</sobjectType>
     <template>
         <name>flexipage:recordHomeSimpleViewTemplate</name>
     </template>

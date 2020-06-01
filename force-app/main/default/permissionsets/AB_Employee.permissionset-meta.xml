@@ -16,7 +16,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Company_News__c.appysebback__DynamicBadgeSet2__c</field>
+        <field>Company_News__c.appyback__DynamicBadgeSet2__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

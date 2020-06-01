@@ -47,11 +47,11 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>bgcolor_Badge1</name>
-                <value>{{appysebback__DynamicBadgeSet__c}}</value>
+                <value>{{appyback__DynamicBadgeSet__c}}</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>bgcolor_Badge2</name>
-                <value>{{appysebback__DynamicBadgeSet2__c}}</value>
+                <value>{{appyback__DynamicBadgeSet2__c}}</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>bgcolor_Badge3</name>
@@ -119,23 +119,23 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Badge1</name>
-                <value>appysebback__Status__c</value>
+                <value>appyback__Status__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Badge2</name>
-                <value>appysebback__News_Type__c</value>
+                <value>appyback__News_Type__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Field0</name>
-                <value>appysebback__Headline__c</value>
+                <value>appyback__Headline__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Field1</name>
-                <value>appysebback__Description__c</value>
+                <value>appyback__Description__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Field2</name>
-                <value>appysebback__Date_Posted__c</value>
+                <value>appyback__Date_Posted__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>noResultsText</name>
@@ -143,7 +143,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>objApiName</name>
-                <value>appysebback__Company_News__c</value>
+                <value>appyback__Company_News__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>pageLimit</name>
@@ -175,7 +175,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>soqlQuery</name>
-                <value>appysebback__Public__c = true</value>
+                <value>appyback__Public__c = true</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>title</name>
@@ -224,7 +224,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>flowName</name>
-                <value>appysebback__Book_Slot_at_Location</value>
+                <value>appyback__Book_Slot_at_Location</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>hideButton</name>
