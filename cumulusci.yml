@@ -21,4 +21,5 @@ tasks:
 flows: 
     ci_feature:
         steps:
-            5: None 
+            5: 
+                task: None
