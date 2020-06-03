@@ -119,23 +119,23 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Badge1</name>
-                <value>appyback__Status__c</value>
+                <value%%%NAMESPACE%%%Status__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Badge2</name>
-                <value>appyback__News_Type__c</value>
+                <value%%%NAMESPACE%%%News_Type__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Field0</name>
-                <value>appyback__Headline__c</value>
+                <value%%%NAMESPACE%%%Headline__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Field1</name>
-                <value>appyback__Description__c</value>
+                <value%%%NAMESPACE%%%Description__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Field2</name>
-                <value>appyback__Date_Posted__c</value>
+                <value%%%NAMESPACE%%%Date_Posted__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>noResultsText</name>
@@ -143,7 +143,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>objApiName</name>
-                <value>appyback__Company_News__c</value>
+                <value%%%NAMESPACE%%%Company_News__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>pageLimit</name>
@@ -175,7 +175,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>soqlQuery</name>
-                <value>appyback__Public__c = true</value>
+                <value%%%NAMESPACE%%%Public__c = true</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>title</name>
@@ -224,7 +224,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>flowName</name>
-                <value>appyback__Book_Slot_at_Location</value>
+                <value%%%NAMESPACE%%%Book_Slot_at_Location</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>hideButton</name>
@@ -250,7 +250,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>entityName</name>
-                <value>appyback__Employee_Request__c</value>
+                <value%%%NAMESPACE%%%Employee_Request__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>filterName</name>
