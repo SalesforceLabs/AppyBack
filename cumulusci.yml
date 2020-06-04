@@ -14,7 +14,7 @@ tasks:
         options:
             path: force-app/main/default/
             find: "%%%NAMESPACE%%%"
-            replace: "pmdm__"
+            replace: "appyback__"
             file_pattern: "*"
 
     clear_namespaced_org:
@@ -42,3 +42,8 @@ flows:
                 task: None
             5: 
                 task: None
+    deploy_unmanaged:
+        steps:
+            2.5: 
+                task: clear_namespaced_org
+            
