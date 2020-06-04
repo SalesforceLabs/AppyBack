@@ -119,7 +119,7 @@
     </flexiPageRegions>
     <masterLabel>Employee Request Record Page</masterLabel>
     <parentFlexiPage>flexipage__default_rec_L</parentFlexiPage>
-    <sobjectType>appyback__Employee_Request__c</sobjectType>
+    <sobjectType>%%%NAMESPACE%%%Employee_Request__c</sobjectType>
     <template>
         <name>flexipage:recordHomeTemplateDesktop</name>
     </template>

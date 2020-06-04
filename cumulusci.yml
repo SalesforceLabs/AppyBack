@@ -8,6 +8,31 @@ project:
     source_format: sfdx
 
 tasks:
+    inject_namespaced_org:
+        description: "Selectively inject namespace references into metadata"
+        class_path: cumulusci.tasks.util.FindReplace
+        options:
+            path: force-app/main/default/flexipages
+            find: "%%%NAMESPACE%%%"
+            replace: "appyback__"
+            file_pattern: "*"
+
+    clear_namespaced_org:
+        description: "Selectively inject namespace references into Flow metadata"
+        class_path: cumulusci.tasks.util.FindReplace
+        options:
+            path: force-app/main/default/flexipages
+            find: "%%%NAMESPACE%%%"
+            replace: ""
+            file_pattern: "*"
+    
+    source_revert:
+        description: "Preserve the source so it can be modified during deployment"
+        class_path: tasks.GenericSrcRevert.GenericSrcRevert
+        options:
+            path: force-app/main/default/flexipages
+            revert_path: force-app-bak
+
     robot:
         options:
             suites: robot/appyback/tests
@@ -18,3 +43,23 @@ tasks:
         options:
             path: robot/appyback/tests
             output: robot/appyback/doc/appyback_tests.html
+flows: 
+    ci_feature:
+        steps:
+            0.5: 
+                task: None
+            5: 
+                task: None
+    deploy_unmanaged:
+        steps:
+            2.4:
+                task: source_revert
+                options:
+                    revert: False
+            2.5: 
+                task: clear_namespaced_org
+            3.2: 
+                task: source_revert
+                options:
+                    revert: True
+            

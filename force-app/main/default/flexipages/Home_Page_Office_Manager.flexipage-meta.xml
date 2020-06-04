@@ -47,11 +47,11 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>bgcolor_Badge1</name>
-                <value>{{appyback__DynamicBadgeSet__c}}</value>
+                <value>{{>%%%NAMESPACE%%%DynamicBadgeSet__c}}</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>bgcolor_Badge2</name>
-                <value>{{appyback__DynamicBadgeSet2__c}}</value>
+                <value>{{>%%%NAMESPACE%%%DynamicBadgeSet2__c}}</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>bgcolor_Badge3</name>
@@ -115,23 +115,23 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Badge1</name>
-                <value>appyback__Status__c</value>
+                <value>%%%NAMESPACE%%%Status__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Badge2</name>
-                <value>appyback__News_Type__c</value>
+                <value>%%%NAMESPACE%%%News_Type__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Field0</name>
-                <value>appyback__Headline__c</value>
+                <value>%%%NAMESPACE%%%Headline__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Field1</name>
-                <value>appyback__Description__c</value>
+                <value>%%%NAMESPACE%%%Description__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>name_Field2</name>
-                <value>appyback__Date_Posted__c</value>
+                <value>%%%NAMESPACE%%%Date_Posted__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>noResultsText</name>
@@ -139,7 +139,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>objApiName</name>
-                <value>appyback__Company_News__c</value>
+                <value>%%%NAMESPACE%%%Company_News__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>pageLimit</name>
@@ -171,11 +171,11 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>soqlQuery</name>
-                <value>appyback__Public__c = true</value>
+                <value>%%%NAMESPACE%%%Public__c = true</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>sortBy</name>
-                <value>appyback__Date_Posted__c DESC</value>
+                <value>%%%NAMESPACE%%%Date_Posted__c DESC</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>title</name>
@@ -221,7 +221,7 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>flowName</name>
-                <value>appyback__Add_Sanitization_Record</value>
+                <value>%%%NAMESPACE%%%Add_Sanitization_Record</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>hideButton</name>
@@ -244,11 +244,11 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>entityName</name>
-                <value>appyback__Location__c</value>
+                <value>%%%NAMESPACE%%%Location__c</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>filterName</name>
-                <value>appyback__Location_Manager</value>
+                <value>%%%NAMESPACE%%%Location_Manager</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>hideActionBar</name>

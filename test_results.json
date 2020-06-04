@@ -7,12 +7,9 @@
         "Outcome": "Pass",
         "StackTrace": null,
         "Stats": {
-            "duration": 61
+            "duration": 21
         },
-        "TestTimestamp": "2020-05-27T16:54:32.000+0000"
-            "duration": 54
-        },
-        "TestTimestamp": "2020-05-19T20:20:52.000+0000"
+        "TestTimestamp": "2020-06-04T20:38:54.000+0000"
     },
     {
         "Children": null,
@@ -22,12 +19,9 @@
         "Outcome": "Pass",
         "StackTrace": null,
         "Stats": {
-            "duration": 30
+            "duration": 19
         },
-        "TestTimestamp": "2020-05-27T16:54:32.000+0000"
-            "duration": 31
-        },
-        "TestTimestamp": "2020-05-19T20:20:53.000+0000"
+        "TestTimestamp": "2020-06-04T20:38:54.000+0000"
     },
     {
         "Children": null,
@@ -37,12 +31,9 @@
         "Outcome": "Pass",
         "StackTrace": null,
         "Stats": {
-            "duration": 45
+            "duration": 25
         },
-        "TestTimestamp": "2020-05-27T16:54:32.000+0000"
-            "duration": 58
-        },
-        "TestTimestamp": "2020-05-19T20:20:53.000+0000"
+        "TestTimestamp": "2020-06-04T20:38:54.000+0000"
     },
     {
         "Children": null,
@@ -52,11 +43,8 @@
         "Outcome": "Pass",
         "StackTrace": null,
         "Stats": {
-            "duration": 13
+            "duration": 11
         },
-        "TestTimestamp": "2020-05-27T16:54:32.000+0000"
-            "duration": 15
-        },
-        "TestTimestamp": "2020-05-19T20:20:53.000+0000"
+        "TestTimestamp": "2020-06-04T20:38:54.000+0000"
     }
 ]
