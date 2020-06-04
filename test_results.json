@@ -7,9 +7,9 @@
         "Outcome": "Pass",
         "StackTrace": null,
         "Stats": {
-            "duration": 74
+            "duration": 21
         },
-        "TestTimestamp": "2020-06-01T04:09:10.000+0000"
+        "TestTimestamp": "2020-06-04T20:38:54.000+0000"
     },
     {
         "Children": null,
@@ -19,9 +19,9 @@
         "Outcome": "Pass",
         "StackTrace": null,
         "Stats": {
-            "duration": 30
+            "duration": 19
         },
-        "TestTimestamp": "2020-06-01T04:09:10.000+0000"
+        "TestTimestamp": "2020-06-04T20:38:54.000+0000"
     },
     {
         "Children": null,
@@ -31,9 +31,9 @@
         "Outcome": "Pass",
         "StackTrace": null,
         "Stats": {
-            "duration": 57
+            "duration": 25
         },
-        "TestTimestamp": "2020-06-01T04:09:10.000+0000"
+        "TestTimestamp": "2020-06-04T20:38:54.000+0000"
     },
     {
         "Children": null,
@@ -45,6 +45,6 @@
         "Stats": {
             "duration": 11
         },
-        "TestTimestamp": "2020-06-01T04:09:10.000+0000"
+        "TestTimestamp": "2020-06-04T20:38:54.000+0000"
     }
 ]
