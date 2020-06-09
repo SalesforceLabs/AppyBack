@@ -4,6 +4,12 @@ public with sharing class ab_TileWallApexController {
         
         pageLimit = Integer.valueOf(pageLimit);
         pageNumber = Integer.valueOf(pageNumber);
+        // escape single quotes for external inputs
+        objApiName = String.escapeSingleQuotes(objApiName);
+        fieldsStr = String.escapeSingleQuotes(fieldsStr);
+        soqlQuery = String.escapeSingleQuotes(soqlQuery);
+        sortBy = String.escapeSingleQuotes(sortBy);
+        recordId = String.escapeSingleQuotes(recordId);
         
         String whereclause = (soqlQuery != null && soqlQuery != '') ? ' WHERE '+soqlQuery : '';
         if(recordId != null && recordId != '') {
@@ -31,6 +37,11 @@ public with sharing class ab_TileWallApexController {
         System.debug('SOQL Search Query: ' + searchQuery);
         
         List<SObject> results = Database.query(searchQuery);
+
+         // Strip fields that are not readable
+         SObjectAccessDecision decision = Security.stripInaccessible(
+            AccessType.READABLE,
+            results);
         
         RecordsResult rr = new RecordsResult();
         rr.count = count;
@@ -44,7 +55,7 @@ public with sharing class ab_TileWallApexController {
         
         pageLimit = Integer.valueOf(pageLimit);
         pageNumber = Integer.valueOf(pageNumber);
-
+        
         String whereclause = (soqlQuery != null && soqlQuery != '') ? ' WHERE ' + soqlQuery : '';
         if(recordId != null && recordId != '') {
             whereclause = whereclause.replace('\'{{recordid}}\'', '\''+recordId+'\'')
@@ -63,7 +74,7 @@ public with sharing class ab_TileWallApexController {
         
         List<List<SObject>> searchList=search.query(searchquery);
 
-    List<SObject> results = null;       
+        List<SObject> results = null;       
 
         if(searchList.size() > 0) {
             results = searchList[0];
