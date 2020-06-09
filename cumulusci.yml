@@ -62,4 +62,16 @@ flows:
                 task: source_revert
                 options:
                     revert: True
+    ci_master:
+        steps:
+            0:
+                task: source_revert
+                options:
+                    revert: False
+            0.1: 
+                task: inject_namespaced_org
+            4:
+                task: source_revert
+                options:
+                    revert: True 
             
