@@ -7,9 +7,9 @@ public with sharing class ab_TileWallApexController {
         // escape single quotes for external inputs
         objApiName = String.escapeSingleQuotes(objApiName);
         fieldsStr = String.escapeSingleQuotes(fieldsStr);
-        soqlQuery = String.escapeSingleQuotes(soqlQuery);
-        sortBy = String.escapeSingleQuotes(sortBy);
-        recordId = String.escapeSingleQuotes(recordId);
+        soqlQuery = (soqlQuery==null ? soqlQuery : String.escapeSingleQuotes(soqlQuery));
+        sortBy = (sortBy==null ? sortBy : String.escapeSingleQuotes(sortBy));
+        recordId = (recordId==null ? recordId : String.escapeSingleQuotes(recordId));
         
         String whereclause = (soqlQuery != null && soqlQuery != '') ? ' WHERE '+soqlQuery : '';
         if(recordId != null && recordId != '') {
