@@ -55,6 +55,14 @@ public with sharing class ab_TileWallApexController {
         
         pageLimit = Integer.valueOf(pageLimit);
         pageNumber = Integer.valueOf(pageNumber);
+        // escape single quotes for external inputs
+        queryTerm = String.escapeSingleQuotes(queryTerm);
+        objApiName = String.escapeSingleQuotes(objApiName);
+        fieldsStr = String.escapeSingleQuotes(fieldsStr);
+        soqlQuery = (soqlQuery==null ? soqlQuery : String.escapeSingleQuotes(soqlQuery));
+        sortBy = (sortBy==null ? sortBy : String.escapeSingleQuotes(sortBy));
+        recordId = (recordId==null ? recordId : String.escapeSingleQuotes(recordId));
+        
         
         String whereclause = (soqlQuery != null && soqlQuery != '') ? ' WHERE ' + soqlQuery : '';
         if(recordId != null && recordId != '') {
@@ -74,6 +82,11 @@ public with sharing class ab_TileWallApexController {
         
         List<List<SObject>> searchList=search.query(searchquery);
 
+        // Strip fields that are not readable from all search results
+        for (List<SObject> result : searchList) { Security.stripInaccessible(
+            AccessType.READABLE,
+            result);
+        }
         List<SObject> results = null;       
 
         if(searchList.size() > 0) {
