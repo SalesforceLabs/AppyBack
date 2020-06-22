@@ -168,7 +168,7 @@ Your admin has received an email about this error and will take care of it.
             <inputParameters>
                 <name>fieldApiName</name>
                 <value>
-                    <stringValue>appyback__Location__c</stringValue>
+                    <stringValue>Location__c</stringValue>
                 </value>
             </inputParameters>
             <inputParameters>
@@ -180,7 +180,7 @@ Your admin has received an email about this error and will take care of it.
             <inputParameters>
                 <name>objectApiName</name>
                 <value>
-                    <stringValue>appyback__Location_Daily_Info__c</stringValue>
+                    <stringValue>Location_Daily_Info__c</stringValue>
                 </value>
             </inputParameters>
             <inputParameters>
