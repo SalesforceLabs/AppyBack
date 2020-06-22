@@ -47,11 +47,11 @@
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>bgcolor_Badge1</name>
-                <value>{{appyback__DynamicBadgeSet__c}}</value>
+                <value>{{%%%NAMESPACE%%%DynamicBadgeSet__c}}</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>bgcolor_Badge2</name>
-                <value>{{appyback__DynamicBadgeSet2__c}}</value>
+                <value>{{%%%NAMESPACE%%%DynamicBadgeSet2__c}}</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>bgcolor_Badge3</name>
