@@ -244,7 +244,31 @@
             <componentName>runtime_approval_process:pendingApprovalCard</componentName>
         </componentInstances>
         <componentInstances>
-            <componentName>b2olocationStatus</componentName>
+            <componentInstanceProperties>
+                <name>enableInlineEdit</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>entityName</name>
+                <value>%%%NAMESPACE%%%Location__c</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>filterName</name>
+                <value>%%%NAMESPACE%%%Location_Manager</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>hideActionBar</name>
+                <value>true</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>hideSearchBar</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>pageSize</name>
+                <value>5</value>
+            </componentInstanceProperties>
+            <componentName>flexipage:filterListCard</componentName>
         </componentInstances>
         <mode>Replace</mode>
         <name>sidebar</name>
