@@ -1,12 +1,15 @@
 # appyback
 
-Add a brief description of this project here, in Markdown format.
-It will be shown on the main page of the project's GitHub repository.
+This is the GitHub repository for the Salesforce Labs app AppyBack.
+If you want to install the managed package and find out more check out the AppExchange listing: https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3u00000MBpFaEAL .
+If you want to contribute or see the code, read below.
+
 
 ## Development
 
 To work on this project in a scratch org:
 
 1. [Set up CumulusCI](https://cumulusci.readthedocs.io/en/latest/tutorial.html)
+    For more info about CumulusCI hit the trail: https://trailhead.salesforce.com/en/content/learn/trails/build-applications-with-cumulusci .
 2. Run `cci flow run dev_org --org dev` to deploy this project.
 3. Run `cci org browser dev` to open the org in your browser.
