@@ -13,13 +13,13 @@
 //    ];
 //     flow.startFlow("Book_Slot_at_Location_Desktop_HP_version",inputVariables);
 
-        flow.startFlow("appyback__Book_Slot_at_Location");
+        flow.startFlow("Book_Slot_at_Location");
 	},
 
     handleStatusChange : function (component, event, helper) {
         if(event.getParam("status") === "FINISHED") {
             var urlEvent = $A.get("e.force:navigateToURL");
-            urlEvent.setParams({"url": "/page/home.jsp",
+            urlEvent.setParams({"url": "/",
                                 "isredirect": "true"
             });
             urlEvent.fire();
