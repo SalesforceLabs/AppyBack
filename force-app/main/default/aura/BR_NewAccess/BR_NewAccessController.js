@@ -7,7 +7,7 @@
     handleStatusChange : function (component, event, helper) {
         if(event.getParam("status") === "FINISHED") {
             var urlEvent = $A.get("e.force:navigateToURL");
-            urlEvent.setParams({"url": ("/home/home.jsp"),
+            urlEvent.setParams({"url": ("/"),
                                 "isredirect": "true"
             });
             urlEvent.fire();
