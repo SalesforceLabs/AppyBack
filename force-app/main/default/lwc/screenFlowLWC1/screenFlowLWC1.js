@@ -52,7 +52,7 @@ export default class screenFlowLWC1 extends LightningElement {
             for (let i = 0; i < data.length; i++) {
                 theOptions.push({
                     value: data[i].Id,
-                    label: new Date(data[i].Date__c).toLocaleDateString()
+                    label: new Date(data[i].appyback__Date__c).toLocaleDateString()
                 });
             }
             this.dateOptions = theOptions;
@@ -86,8 +86,8 @@ export default class screenFlowLWC1 extends LightningElement {
         for (let theDateRec of this.dateItems) {
             if (theDateRec.Id === this.dateValue) {
                 window.console.log('Match');
-                window.console.log('theDateRec.Seats_Available_Full__c: ', theDateRec.Seats_Available_Full__c);
-                return theDateRec.Seats_Available_Full__c > 0 ? false : true;
+                window.console.log('theDateRec.appyback__Seats_Available_Full__c: ', theDateRec.appyback__Seats_Available_Full__c);
+                return theDateRec.appyback__Seats_Available_Full__c > 0 ? false : true;
             }
         }
         return true;
@@ -101,8 +101,8 @@ export default class screenFlowLWC1 extends LightningElement {
             window.console.log('theDateRec: ', theDateRec);
             if (theDateRec.Id === this.dateValue) {
                 window.console.log('Match');
-                window.console.log('theDateRec.Seats_Available_Morning__c: ', theDateRec.Seats_Available_Morning__c);
-                return theDateRec.Seats_Available_Morning__c > 0 ? false : true;
+                window.console.log('theDateRec.appyback__Seats_Available_Morning__c: ', theDateRec.appyback__Seats_Available_Morning__c);
+                return theDateRec.appyback__Seats_Available_Morning__c > 0 ? false : true;
             }
         }
         return true;
@@ -115,8 +115,8 @@ export default class screenFlowLWC1 extends LightningElement {
         for (let theDateRec of this.dateItems) {
             if (theDateRec.Id === this.dateValue) {
                 window.console.log('Match');
-                window.console.log('theDateRec.Seats_Available_Afternoon__c: ', theDateRec.Seats_Available_Afternoon__c);
-                return theDateRec.Seats_Available_Afternoon__c > 0 ? false : true;
+                window.console.log('theDateRec.appyback__Seats_Available_Afternoon__c: ', theDateRec.appyback__Seats_Available_Afternoon__c);
+                return theDateRec.appyback__Seats_Available_Afternoon__c > 0 ? false : true;
             }
         }
         return true;
